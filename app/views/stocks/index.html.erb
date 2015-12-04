@@ -24,4 +24,9 @@
 
 <br>
 
+<% @stocks.each do |stock| %>
+  <h1><%= stock.name %> chart </h1>
+  <%= line_chart stock.history_for(period: 2.years, type: :daily) %>
+<% end %>
+
 <%= link_to 'New Stock', new_stock_path %>

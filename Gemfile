@@ -13,6 +13,8 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'simple_form'
 gem 'devise'
+gem 'chartkick'
+gem 'yahoo-finance'
 
 group :development, :test do
   gem 'byebug'
